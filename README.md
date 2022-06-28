@@ -1,2 +1,3 @@
 # ZhuohaoNi.github.io
-Personal website
+Hi, this is my website. 
+www.zhuohaoni.com

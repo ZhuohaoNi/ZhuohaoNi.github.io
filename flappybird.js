@@ -24,24 +24,34 @@ let score_title =
 // Setting initial game state to start
 let game_state = 'Start';
 	
-// Add an eventlistener for key presses
+// Start the game if enter key is pressed or screen is tapped
 document.addEventListener('keydown', (e) => {
-	
-// Start the game if enter key is pressed
-if (e.key == 'Enter' &&
-	game_state != 'Play') {
-	document.querySelectorAll('.pipe_sprite')
-			.forEach((e) => {
-	e.remove();
-	});
-	bird.style.top = '40vh';
-	game_state = 'Play';
-	message.innerHTML = '';
-	score_title.innerHTML = 'Score : ';
-	score_val.innerHTML = '0';
-	play();
-}
+    if (e.key == 'Enter' && game_state != 'Play') {
+        startGame();
+    }
 });
+
+document.addEventListener('touchstart', () => {
+    if (game_state != 'Play') {
+        startGame();
+    }
+});
+
+function startGame() {
+    // Remove pipes, reset bird, reset score, and set game state to 'Play'
+    document.querySelectorAll('.pipe_sprite').forEach((e) => {
+        e.remove();
+    });
+    bird.style.top = '40vh';
+    game_state = 'Play';
+    message.innerHTML = '';
+    score_title.innerHTML = 'Score : ';
+    score_val.innerHTML = '0';
+    
+    // Call the play function to start the game
+    play();
+}
+
 function play() {
 function move() {
 	

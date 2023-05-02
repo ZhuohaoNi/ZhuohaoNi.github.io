@@ -109,6 +109,9 @@ function apply_gravity() {
 	}
 	});
 
+    document.addEventListener('touchstart', () => {
+        bird_dy = -7.6;
+    });
 	// Collision detection with bird and
 	// window top and bottom
 

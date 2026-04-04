@@ -507,7 +507,7 @@ sup {
 
   .terminal-body p,
   .terminal-body a {
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
   }
 }
 

@@ -468,9 +468,51 @@ sup {
 
   .site-header {
     justify-content: start;
+    gap: 12px;
+  }
+
+  .top-links {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  .top-links a,
+  .theme-toggle {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 10px;
+  }
+
+  .hero {
+    gap: 14px;
   }
 
   .avatar {
     width: 96px;
+  }
+
+  .hero-log p {
+    font-size: 0.94rem;
+  }
+
+  .terminal-section summary {
+    min-height: 44px;
+    padding: 12px 14px;
+  }
+
+  .terminal-body {
+    padding: 14px;
+  }
+
+  .terminal-body p,
+  .terminal-body a {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 420px) {
+  .terminal-section summary::after {
+    content: "[run]";
   }
 }

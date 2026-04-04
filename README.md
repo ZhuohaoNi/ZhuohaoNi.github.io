@@ -1,4 +1,11 @@
 # ZhuohaoNi.github.io
-Hi, this is my website. 
 
-www.zhuohaoni.com
+Minimal terminal-style personal website.
+
+Local preview:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000`.

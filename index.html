@@ -1,255 +1,205 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Zhuohao Ni</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhuohao Ni</title>
+  <script>
+    // Apply saved theme before paint to avoid flash
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <meta
+    name="description"
+    content="Zhuohao Ni is a robotics master's student interested in AI systems, MLLMs, and agentic AI."
+  >
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top">Zhuohao Ni</a>
+      <div class="top-links">
+        <a href="https://github.com/ZhuohaoNi">GitHub</a>
+        <a href="mailto:pppni@seas.upenn.edu">Email</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon"></span>
+        </button>
+      </div>
+    </header>
 
-<!-- tic-tac-toe -->
+    <main id="top">
+      <section class="hero">
+        <img class="avatar" src="images/avatar.jpg" alt="Portrait of Zhuohao Ni">
+        <div class="hero-copy">
+          <p class="eyebrow" id="eyebrow"></p>
+          <h1>Zhuohao Ni<span class="block-cursor">█</span></h1>
+          <p class="hero-status">UPenn Robotics / AI Systems</p>
+          <div class="hero-log" id="heroLog" aria-label="Intro">
+            <p class="log-line"><span class="prompt">&gt;</span> M.S.E. in Robotics at Penn.</p>
+            <p class="log-line"><span class="prompt">&gt;</span> Previously studied Computer Engineering at UBC.</p>
+            <p class="log-line"><span class="prompt">&gt;</span> Interested in MLLMs, agentic AI, and embodied AI.</p>
+            <p class="log-line"><span class="prompt">&gt;</span> I like building systems that connect research with real products.</p>
+          </div>
+        </div>
+      </section>
 
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <section class="command-list" aria-label="Expandable sections">
+        <details class="terminal-section">
+          <summary><span class="prompt">$</span> open publications.bib</summary>
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal-body">
+              <p class="section-title">publications.bib</p>
+              <p class="section-note"><sup>*</sup> equal contribution</p>
+              <div class="entry-list">
+                <article class="entry">
+                  <p class="entry-head">FiLMed: Fine-Grained Visual Tokens Align with Localized Semantics</p>
+                  <p><span class="author-self">Ni, Z.</span><sup>*</sup> and Li, X. Accepted to Actionable Interpretability Workshop at ICML 2025.</p>
+                </article>
+                <article class="entry">
+                  <p class="entry-head">MLAN: Language-Based Instruction Tuning Preserves and Transfers Knowledge in Multimodal Language Models</p>
+                  <p>Tu, J.<sup>*</sup>, <span class="author-self">Ni, Z.</span><sup>*</sup>, Crispino, N., Yu, Z., Bendersky, M., Gunel, B., Jia, R., Liu, X., Lyu, L., Song, D., and Wang, C. Accepted to Towards Knowledgeable Foundation Models at ACL 2025.</p>
+                </article>
+                <article class="entry">
+                  <p class="entry-head">Learnable Community-Aware Transformer for Brain Connectome Analysis with Token Clustering</p>
+                  <p>Yang, Y.<sup>*</sup>, Zhao, B.<sup>*</sup>, <span class="author-self">Ni, Z.</span><sup>*</sup>, Zhao, Y., and Li, X. Submitted to Medical Image Analysis.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </details>
 
-	<!-- JavaScript file included -->
-	<script src="tic.js"></script>
-</head>
+        <details class="terminal-section">
+          <summary><span class="prompt">$</span> open research.log</summary>
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal-body">
+              <p class="section-title">research.log</p>
+              <div class="entry-list">
+                <article class="entry">
+                  <p class="entry-head">WashU NLP Group / 2024</p>
+                  <p>Worked on instruction tuning for MLLMs and built efficient training pipelines. First-author work accepted to an ACL 2025 workshop.</p>
+                </article>
+                <article class="entry">
+                  <p class="entry-head">UBC TEA Lab / 2023-2025</p>
+                  <p>Worked on interpretable vision transformers for skin lesion analysis and transformer models for brain connectome analysis.</p>
+                </article>
+                <article class="entry">
+                  <p class="entry-head">Westlake University / 2023</p>
+                  <p>Built physics-informed modeling systems for dynamical problems governed by time-dependent PDEs.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </details>
 
-<body class="is-preload">
+        <details class="terminal-section">
+          <summary><span class="prompt">$</span> open experience.log</summary>
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal-body">
+              <p class="section-title">experience.log</p>
+              <div class="entry-list">
+                <article class="entry">
+                  <p class="entry-head">Microsoft / incoming 2026</p>
+                  <p>Incoming Software Engineering Intern on AI Platform.</p>
+                </article>
+                <article class="entry">
+                  <p class="entry-head">ShotAI / 2025</p>
+                  <p>Built a multi-agent video editing system with Gemini, LiteLLM, tool calling, and fast media pipelines.</p>
+                </article>
+                <article class="entry">
+                  <p class="entry-head">LEAP A.I. / 2023-2025</p>
+                  <p>Built a university AI assistant with RAG, fine-tuning, function calling, and AWS serverless infrastructure.</p>
+                </article>
+                <article class="entry">
+                  <p class="entry-head">Walnut / 2024-2025</p>
+                  <p>Built an AI study assistant with transcription, PDF retrieval, and a production backend.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </details>
 
-	<!-- Header -->
-	<section id="header">
-		<header>
-			<div class="inner">
-				<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-				<h1><strong>I am Zhuohao Ni</strong>, <br />a UBC engineering student</h1>
-			</div>
-		</header>
-		<nav id="nav">
-			<ul>
-				<h1 align="center"><a style="color:grey;font-size:20px" href="#one" class="active">About me</a></h1>
-				<h1 align="center"><a style="color:grey;font-size:20px" href="#two">Projects</a></h1>
-<!-- 				<h1 align="center">
-					<a style="color:grey;font-size:20px" href="game_page.html">Games</a>
-				</h1> -->
+        <details class="terminal-section">
+          <summary><span class="prompt">$</span> open contact.txt</summary>
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal-body">
+              <p class="section-title">contact.txt</p>
+              <p><a href="mailto:pppni@seas.upenn.edu">pppni@seas.upenn.edu</a></p>
+              <p><a href="https://github.com/ZhuohaoNi">github.com/ZhuohaoNi</a></p>
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
+  </div>
 
-				<!--
-					<li><a href="#three">A Few Accomplishments</a></li>
-					<li><a href="#four">Contact</a></li>
-					-->
-			</ul>
-		</nav>
+  <script>
+    // Accordion
+    const sections = document.querySelectorAll(".terminal-section");
+    sections.forEach((section) => {
+      section.addEventListener("toggle", () => {
+        if (!section.open) return;
+        sections.forEach((other) => {
+          if (other !== section) other.open = false;
+        });
+      });
+    });
 
-	</section>
+    // Theme toggle
+    const toggle = document.getElementById("themeToggle");
+    function getTheme() {
+      return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+    }
+    function applyTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      localStorage.setItem("theme", theme);
+    }
+    toggle.addEventListener("click", () => {
+      applyTheme(getTheme() === "dark" ? "light" : "dark");
+    });
 
+    // Typewriter for eyebrow
+    const eyebrow = document.getElementById("eyebrow");
+    const text = "booting profile...";
+    let i = 0;
+    function type() {
+      if (i <= text.length) {
+        eyebrow.textContent = text.slice(0, i);
+        i++;
+        setTimeout(type, i === text.length + 1 ? 0 : 55);
+      }
+    }
+    type();
 
-	<!-- Main -->
-	<div id="main">
-
-		<!-- One -->
-		<section id="one">
-			<header class="major">
-				<h2>About Me<br /></h2>
-			</header>
-			<p>Hi, I am Zhuohao Ni. I am currently a second year UBC student studying computer engineering.</p>
-			<p>Emmm, this website hasn't been updated since 2022, maybe ignore it for now:)</p>
-			<!--
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
-						-->
-		</section>
-
-
-		<!-- Two -->
-		<section id="two">
-			<h2>Projects</h2>
-			<div class="row">
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-					<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-					<h3>Claw</h3>
-					<p>This is a fully-autonomous claw retrieval systems, built by sonar sensor, servo motor and other
-						easy-to-find materials, such as cardboard, glue, and rubber-bands.
-						The teeth structure allows the claws to better grasp objects of different sizes. The prolonged
-						beam keeps sonar sensor from being disturbed by large objects.
-					</p>
-				</article>
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-					<h3>Tic-Tac-Toe</h3>
-					<p>This is a simple Tic-Tac-Toe game programming by Java.
-						It requires two players to play.
-						Each player needs to enter a two-dimensional coordinate as input.
-						The program will output the status of each turn.</p>
-				</article>
-				<!--
-
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>好像没有第三个了</h3>
-								<p>blabla</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>第四个也没有了</h3>
-								<p>blabla</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>第五个我就写扫雷吧</h3>
-								<p>我还没有做好，大家可以先玩电脑自带的</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>emm，真的没有了</h3>
-								<p>谢谢大家</p>
-							</article>
-						</div>
-						-->
-
-				<!--
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-						-->
-		</section>
-
-		<div id="tic-tac-toe">
-			<style>
-				/* CSS Code */
-				/* 3*3 Grid */
-				#b1,
-				#b2,
-				#b3,
-				#b4,
-				#b5,
-				#b6,
-				#b7,
-				#b8,
-				#b9 {
-					display: inline-block;
-					width: 70px;
-					height: 52px;
-					margin: auto;
-					border: 1px solid gray;
-					border-radius: 6px;
-					font-size: 30px;
-					text-align: center;
-					vertical-align: top;
-					box-sizing: border-box;
-				}
-
-				/* Reset Button */
-				#but {
-					box-sizing: border-box;
-					width: 95px;
-					height: 40px;
-					border: 1px solid rgb(255, 255, 255);
-					margin: auto;
-					border-radius: 4px;
-					font-family: Verdana,
-						Geneva, Tahoma, sans-serif;
-
-					background-color: rgb(0, 0, 0);
-					color: white;
-					font-size: 20px;
-					cursor: pointer;
-				}
-
-				/* Player turn space */
-				#print {
-					font-family: Verdana,
-						Geneva, Tahoma, sans-serif;
-
-					color: dodgerblue;
-					font-size: 20px;
-				}
-
-				/* Main Container */
-				#main {
-					text-align: center;
-				}
-
-				/* Game Instruction Text */
-				#ins {
-					font-family: Verdana,
-						Geneva, Tahoma, sans-serif;
-
-					font-size: 17px;
-				}
-			</style>
-
-			<h2>TIC TAC TOE</h2>
-
-			<!-- Game Instructions -->
-			<p id="ins">First Player starts as <b>Player X</b><br>And<br>Second
-				Player as <b>Player 0</b>
-			</p>
-
-			<br><br>
-			<!-- 3*3 grid of Boxes -->
-			<input type="text" id="b1" onclick="myfunc_3(); myfunc();" readonly>
-
-			<input type="text" id="b2" onclick="myfunc_4(); myfunc();" readonly>
-
-			<input type="text" id="b3" onclick="myfunc_5(); myfunc();" readonly>
-			<br><br>
-
-			<input type="text" id="b4" onclick="myfunc_6(); myfunc();" readonly>
-
-			<input type="text" id="b5" onclick="myfunc_7(); myfunc();" readonly>
-
-			<input type="text" id="b6" onclick="myfunc_8(); myfunc();" readonly>
-			<br><br>
-
-			<input type="text" id="b7" onclick="myfunc_9(); myfunc();" readonly>
-
-			<input type="text" id="b8" onclick="myfunc_10();myfunc();" readonly>
-
-			<input type="text" id="b9" onclick="myfunc_11();myfunc();" readonly>
-
-			<!-- Grid end here -->
-			<br><br><br>
-			<!-- Button to reset game -->
-			<button id="but" onclick="myfunc_2()">
-				RESET
-			</button>
-
-			<br><br>
-			<!-- Space to show player turn -->
-			<p id="print"></p>
-		</div>
-
-	</div>
-	</div>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				<li><a href="#" class="icon brands fa-instagram"><span class="label">Twitter</span></a></li>
-				<li><a href="https://github.com/ZhuohaoNi" class="icon brands fa-github"><span
-							class="label">Github</span></a></li>
-				<li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=Qc2JvAW6b_Dyibh6U_w544sol49qwnE5&noverify=0"
-						class="icon brands fa-qq"><span class="label">qq</span></a></li>
-				<li><a href="mailto:shuaiqidepeterni@gmail.com" class="icon solid fa-envelope"><span
-							class="label">Email</span></a></li>
-			</ul>
-
-		</div>
-	</footer>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+    // Hero log lines staggered fade-in
+    const logLines = document.querySelectorAll(".log-line");
+    logLines.forEach((line, idx) => {
+      line.style.animationDelay = (300 + idx * 120) + "ms";
+    });
+  </script>
 </body>
-
 </html>

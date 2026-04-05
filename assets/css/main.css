@@ -457,7 +457,7 @@ sup {
 @media (max-width: 640px) {
   .page-shell {
     width: min(calc(100% - 20px), var(--width));
-    padding-top: 18px;
+    padding: 16px 0 28px;
   }
 
   .site-header,
@@ -468,9 +468,141 @@ sup {
 
   .site-header {
     justify-content: start;
+    gap: 10px;
+    padding-bottom: 12px;
+  }
+
+  .top-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.8rem;
+  }
+
+  .theme-toggle {
+    padding: 2px 7px;
+    font-size: 0.78rem;
   }
 
   .avatar {
     width: 96px;
+    border-radius: 12px;
+  }
+
+  main {
+    gap: 14px;
+    padding-top: 16px;
+  }
+
+  .hero {
+    gap: 14px;
+  }
+
+  .hero-copy {
+    gap: 8px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 11vw, 2.8rem);
+    line-height: 0.95;
+  }
+
+  .hero-status,
+  .eyebrow {
+    font-size: 0.76rem;
+  }
+
+  .hero-log {
+    gap: 7px;
+  }
+
+  .hero-log p {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .block-cursor {
+    display: none;
+  }
+
+  .terminal-bar {
+    padding: 10px 12px;
+  }
+
+  .terminal-body {
+    gap: 9px;
+    padding: 14px;
+    font-size: 0.84rem;
+  }
+
+  .output {
+    padding-left: 14px;
+  }
+
+  .command-list {
+    gap: 8px;
+  }
+
+  .terminal-section {
+    border-radius: 10px;
+  }
+
+  .terminal-section summary {
+    padding: 12px 14px;
+    font-size: 0.84rem;
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .terminal-section summary::after {
+    font-size: 0.72rem;
+  }
+
+  .terminal-section .terminal-window {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .entry-list {
+    gap: 12px;
+  }
+
+  .entry {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-shell {
+    width: min(calc(100% - 16px), var(--width));
+    padding-top: 14px;
+  }
+
+  .brand {
+    font-size: 0.9rem;
+  }
+
+  .top-links {
+    font-size: 0.76rem;
+  }
+
+  .avatar {
+    width: 88px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.85rem, 11vw, 2.45rem);
+  }
+
+  .hero-log p {
+    font-size: 0.89rem;
+  }
+
+  .terminal-section summary {
+    padding: 11px 12px;
+  }
+
+  .terminal-body {
+    padding: 12px;
   }
 }
